@@ -1,0 +1,161 @@
+## Removed
+
+Rabas
+
+Embutits
+
+Salamasr
+
+
+## Add
+
+Bunyons - Matafaluga (tipo de anise, dpostres azucarillos por encime )
+
+Canalones de carne de toda la vida -plat
+
+## Nadal
+
+Sopar per empotrar per cap d'any. Pe comandas per telefonee amb anticipacio (?) Bones 
+
+
+Archive:
+
+## Rabas
+
+- cat
+          <div class="col-lg-6 menu-item filter-tapas">
+            <img src="assets/img/menu/rabas.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Tires de Calamar - Rabas</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- fr
+          <div class="col-lg-6 menu-item filter-tapas">
+            <img src="assets/img/menu/rabas.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Marais</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- es
+
+          <div class="col-lg-6 menu-item filter-tapas">
+            <img src="assets/img/menu/rabas.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Rabas</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- en
+
+          <div class="col-lg-6 menu-item filter-tapas">
+            <img src="assets/img/menu/rabas.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Rabas</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Fried Calamari Strips
+            </div>
+          </div>
+
+## Embutits
+
+- cat
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/embutides.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Embutits</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- fr
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/embutides.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Charcuterie</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- es
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/embutides.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Embutidos</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- en
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/embutides.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Cold Meats</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              Selection of cold meats
+            </div>
+          </div>
+
+## Salmorejo
+
+- cat
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/salmorejo.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Salmorejo</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- fr 
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/salmorejo.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Salmorejo</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- es
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/salmorejo.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Salmorejo</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+            </div>
+          </div>
+
+- en
+
+          <div class="col-lg-6 menu-item filter-dishes">
+            <img src="assets/img/menu/salmorejo.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#menu">Salmorejo</a><span></span>
+            </div>
+            <div class="menu-ingredients">
+              A style of creamy Gazpacho, with a thicker consistency, and served cold
+            </div>
+          </div>
+
