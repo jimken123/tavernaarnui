@@ -1,26 +1,18 @@
-## Removed
+## To Do
 
-Rabas
-
-Embutits
-
-Salamasr
-
-
-## Add
+### Add
 
 Bunyons - Matafaluga (tipo de anise, dpostres azucarillos por encime )
 
 Canalones de carne de toda la vida -plat
 
-## Nadal
+### Nadal
 
 Sopar per empotrar per cap d'any. Pe comandas per telefonee amb anticipacio (?) Bones 
 
+## Removed
 
-Archive:
-
-## Rabas
+### Rabas
 
 - cat
           <div class="col-lg-6 menu-item filter-tapas">
@@ -65,7 +57,7 @@ Archive:
             </div>
           </div>
 
-## Embutits
+### Embutits
 
 - cat
 
@@ -112,7 +104,7 @@ Archive:
             </div>
           </div>
 
-## Salmorejo
+### Salmorejo
 
 - cat
 
@@ -158,4 +150,3 @@ Archive:
               A style of creamy Gazpacho, with a thicker consistency, and served cold
             </div>
           </div>
-
