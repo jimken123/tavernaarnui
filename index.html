@@ -31,6 +31,33 @@
 
 <body>
 
+   <!-- ======= Christmas Popup ======= -->
+      <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Menu de Nadal</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit?
+        </p>
+        <a href="#">Let's Go</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+
+
+  
    <!-- ======= Top Bar ======= -->
    <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
