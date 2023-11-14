@@ -1604,10 +1604,10 @@ section {
 /* The Close Button */
 .close {
   color: #cda45e;
-  float: center;
+  float: right;
   font-size: 28px;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
 
 }
 
