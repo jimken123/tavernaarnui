@@ -26,65 +26,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
-  <style>
-		.box {
-			background-color: red;
-			height: 20vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		}
-		.box a {
-			display: inline-block;
-			background-color: #fff;
-			padding: 15px;
-			border-radius: 3px;
-		}
-		.modal {
-			align-items: center;
-			display: flex;
-			justify-content: center; 
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: rgba(254, 126, 126, 0.7);
-			transition: all 0.4s;
-			visibility: hidden;
-			opacity: 0;
-		}
-		.content {
-			position: absolute;
-			background: white;
-			width: 500px;
-			padding: 1em 2em;
-			border-radius: 4px;
-		} 
-		.modal:target {
-			visibility: visible;
-			opacity: 1;
-		}
-		.box-close {
-			position: absolute;
-			top: 0;
-			right: 15px;
-			color: #fe0606;
-			text-decoration: none;
-			font-size: 30px;
-		}
-	</style>
 
 </head>
 
 <body>
 
-
-
-  
    <!-- ======= Top Bar ======= -->
    <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -135,34 +81,38 @@
           <div class="btns">
             <a href="#menu" class="btn-menu animated fadeInUp scrollto">El nostre menú</a>
             <a href="#contact" class="btn-book animated fadeInUp scrollto">Reserva una taula</a>
+
+
           </div>
+
         </div>
+
+<!-- Christmas Modal -->
+<p></p>
+<button id="myBtn">Fes 'click' per menú de nadal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Aquest nadal tenim un menú per emportar</p>
+    <p>Truca'ns per detalls: +34 653 64 69 33</p>
+    <p>Bones festes!</p>
+
+  </div>
+
+</div>
+
+
+<!-- Christmas Modal Ends-->
+
+
 
       </div>
     </div>
   </section><!-- End Hero -->
-
-         <!-- ======= Christmas Popup ======= -->
-         <div class="box">
-          <a href="#popup-box"> 
-            <h2>Menu de Nadal</h2>
-            Fes click per contacta-nos per menu de Nadal!
-          </a>
-        </div>
-        <div id="popup-box" class="modal">
-          <div class="content">
-            <h1 style="color: red;">
-              Taverna Arnui!
-            </h1>
-            <b>
-              <p>Never Give Up !</p>
-            </b>
-            <a href="#"
-            class="box-close">
-              ×
-            </a>
-          </div>
-        </div>
 
   <main id="main">
 
