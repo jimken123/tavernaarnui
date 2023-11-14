@@ -8,10 +8,10 @@ The [Taverna Arnui](https://tavernaarnui.com) website.
 
 ## Workflow
 
--> automatic deployment from commits in 'main' to [github.io](https://jimken123.github.io/tavernaarnui/) for quick verification
+-> automatic deployment from commits in `main` to [github.io](https://jimken123.github.io/tavernaarnui/) for quick verification
 
--> automatic deployment from commits in 'main' to [cloudflare pages](https://tavernaarnui.pages.dev) for more quick verification
+-> automatic deployment from commits in `main` to [cloudflare pages](https://tavernaarnui.pages.dev) for more quick verification
 
--> automatic deployment from commits in 'main' to [tavernaarnui.com](https://tavernaarnui.com) as dev env
+-> automatic deployment from commits in `main` to [tavernaarnui.com](https://tavernaarnui.com) as dev env
 
 ![](assets/img/hero-bg.jpg)
