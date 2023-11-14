@@ -1,11 +1,17 @@
 # tavernaarnui.com
 
-The [Taverna Arnui](https://tavernaarnui.com) website, with a mirror on [github.io](https://jimken123.github.io/tavernaarnui/).
+The [Taverna Arnui](https://tavernaarnui.com) website.
+
+- Dev: [github.io](https://jimken123.github.io/tavernaarnui/)
+- More dev: [cloudflare](https://tavernaarnui.pages.dev)
+- Prod: [Taverna Arnui](https://tavernaarnui.com)
 
 ## Workflow
 
-Changes are made in this repo -> verification on the [mirror](https://jimken123.github.io/tavernaarnui/) -> upload files from this repo to [Blacknight](https://cp.blacknight.com) -> prod env is [tavernaarnui.com](https://tavernaarnui.com).
+-> automatic deployment from commits in 'main' to [github.io](https://jimken123.github.io/tavernaarnui/) for quick verification
 
-DNS nameservers are on [Cloudflare](https://www.cloudflare.com/) for the Let's Encrypt SSL certs. 
+-> automatic deployment from commits in 'main' to [cloudflare pages](https://tavernaarnui.pages.dev) for more quick verification
+
+-> automatic deployment from commits in 'main' to [tavernaarnui.com](https://tavernaarnui.com) as dev env
 
 ![](assets/img/hero-bg.jpg)
