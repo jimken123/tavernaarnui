@@ -1598,7 +1598,7 @@ section {
   padding: 10px;
   border: 1px solid #cda45e;
   width: 80%; /* Could be more or less, depending on screen size */
-  text-align: center;
+  text-align: right;
 }
 
 /* The Close Button */
