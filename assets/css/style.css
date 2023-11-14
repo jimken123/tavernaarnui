@@ -1604,7 +1604,7 @@ section {
 /* The Close Button */
 .close {
   color: #cda45e;
-  float: left;
+  float: center;
   font-size: 28px;
   font-weight: bold;
   text-align: right;
