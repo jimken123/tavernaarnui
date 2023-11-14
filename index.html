@@ -26,35 +26,62 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+		.box {
+			background-color: red;
+			height: 20vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		}
+		.box a {
+			display: inline-block;
+			background-color: #fff;
+			padding: 15px;
+			border-radius: 3px;
+		}
+		.modal {
+			align-items: center;
+			display: flex;
+			justify-content: center; 
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(254, 126, 126, 0.7);
+			transition: all 0.4s;
+			visibility: hidden;
+			opacity: 0;
+		}
+		.content {
+			position: absolute;
+			background: white;
+			width: 500px;
+			padding: 1em 2em;
+			border-radius: 4px;
+		} 
+		.modal:target {
+			visibility: visible;
+			opacity: 1;
+		}
+		.box-close {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			color: #fe0606;
+			text-decoration: none;
+			font-size: 30px;
+		}
+	</style>
 
 </head>
 
 <body>
 
-   <!-- ======= Christmas Popup ======= -->
-      <div class="popup">
-        <button id="close">&times;</button>
-        <h2>Menu de Nadal</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit?
-        </p>
-        <a href="#">Let's Go</a>
-    </div>
-    <!--Script-->
-    <script type="text/javascript">
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        2000 
-    )
-});
-
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
-    </script>
 
 
   
@@ -114,6 +141,28 @@ document.querySelector("#close").addEventListener("click", function(){
       </div>
     </div>
   </section><!-- End Hero -->
+
+         <!-- ======= Christmas Popup ======= -->
+         <div class="box">
+          <a href="#popup-box"> 
+            <h2>Menu de Nadal</h2>
+            Fes click per contacta-nos per menu de Nadal!
+          </a>
+        </div>
+        <div id="popup-box" class="modal">
+          <div class="content">
+            <h1 style="color: red;">
+              Taverna Arnui!
+            </h1>
+            <b>
+              <p>Never Give Up !</p>
+            </b>
+            <a href="#"
+            class="box-close">
+              ×
+            </a>
+          </div>
+        </div>
 
   <main id="main">
 
