@@ -18,3 +18,8 @@ The [Taverna Arnui](https://tavernaarnui.com) website.
 -> Merges to main are automatically deployed to [cloudflare pages](https://tavernaarnui.pages.dev) and [tavernaarnui.com](https://tavernaarnui.com)
 
 ![](assets/img/hero-bg.jpg)
+
+## TODO
+
+- transfer to Cloudflare by 2026
+- domain expires on May 18th, 2026
