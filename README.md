@@ -17,7 +17,7 @@ The [Taverna Arnui](https://tavernaarnui.com) website.
 
 -> Merges to main are automatically deployed to [cloudflare pages](https://tavernaarnui.pages.dev) and [tavernaarnui.com](https://tavernaarnui.com)
 
-![](assets/img/hero-bg.jpg)
+![](/images/hero-bg.jpg)
 
 ## To Do
 
