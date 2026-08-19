@@ -1,714 +1,570 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taverna Arnui</title>
 
-  <title>Taverna Arnui</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/fav.png" rel="favicon">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="top">
 
-   <!-- ======= Top Bar ======= -->
-   <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+34 653 64 69 33</span></i>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="index.html">CAT</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="en.html">EN</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="fr.html">FR</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="es.html">ES</a>
-      </div>
-
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-  </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
 
-      <!-- Uncomment below if you prefer to use text instead of an image logo -->
-      <h1 class="logo me-auto me-lg-0"><a href="en.html">Taverna Arnui</a></h1>
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#menu" class="book-a-table-btn scrollto d-none d-lg-flex">Menu</a>
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
 
-    </div>
-  </header><!-- End Header -->
+            <div class="container s-header__content">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1><span>Taverna Arnui</span></h1>
-          <h2>Welcome to Llavorsí!</h2>
+                <div class="s-header__block">
+                    <div class="header-logo">
+                        <a class="logo" href="index.html">
+                            <h5>Taverna Arnui</h5>
+                        </a>
+                    </div>
 
-          <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#contact" class="btn-book animated fadeInUp scrollto">Reserve a Table</a>
-          </div>
-        </div>
-	      
-      </div>    
-    </div>
-  </section><!-- End Hero -->
+                    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
 
-  <main id="main">
+                <nav class="header-nav">
+                    <ul class="header-nav__links">
+                        <li><a href="index.html">Cat</a></li>
+                        <li><a href="es.html">Es</a></li>
+                        <li><a href="en.html">En</a></li>                       
+                    </ul> <!-- end header-nav__links -->
 
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
+                    <div class="header-contact">
+                        <a href="tel:+" class="header-contact__num btn">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                stroke-width="1.5" width="24" height="24" color="#000000">
+                                <defs>
+                                    <style>
+                                        .cls-6376396cc3a86d32eae6f0dc-1 {
+                                            fill: none;
+                                            stroke: currentColor;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="cls-6376396cc3a86d32eae6f0dc-1"
+                                    d="M19.64,21.25c-2.54,2.55-8.38.83-13-3.84S.2,6.9,2.75,4.36L5.53,1.57,10.9,6.94l-2,2A2.18,2.18,0,0,0,8.9,12L12,15.1a2.18,2.18,0,0,0,3.07,0l2-2,5.37,5.37Z">
+                                </path>
+                            </svg>
+                            +34 653 64 69 33
+                        </a>
+                    </div> <!-- end header-contact -->
+                </nav> <!-- end header-nav -->
 
-        <div class="section-title">
-          <h2>Menu</h2>
-          <p>Our Menu</p>
-        </div>
+            </div> <!-- end s-header__content -->
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-tapas">Tapas</li>
-              <li data-filter=".filter-dishes">Dishes</li>
-              <li data-filter=".filter-coca">Cocas</li>
-              <li data-filter=".filter-desserts">Desserts</li>
-            </ul>
-          </div>
-        </div>
+        </header> <!-- end s-header -->
 
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="container s-intro target-section">
 
-        <!-- Hummus
-	  <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/hummus.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Hummus</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Cooked, mashed chickpeas blended with tahini, lemon juice, and garlic
-            </div>
-          </div>
- 	-->
-		
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/patates.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Spicy Potato Wedges</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Patatas Bravas, but with a kick
-            </div>
-          </div>
+            <div class="grid-block s-intro__content">
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/patates-allioli.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Potato Wedges with Garlic Sauce</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Patatas Bravas, with traditional Catalan garlic and mayonnaise sauce
-            </div>
-          </div>
+                <div class="intro-header">
+                    <div class="intro-header__overline">Wecome to</div>
+                    <h1 class="intro-header__big-type">
+                        Taverna <br>
+                        Arnui
+                    </h1>
+                </div> <!-- end intro-header -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/croquetes-pollastre.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Chicken Croquettes</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/croquetes-bolets.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Mushroom Croquettes</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                <figure class="intro-pic-primary">
+                    <img src="images/intro-3.png" srcset="images/intro-3.png 1x, 
+                         images/intro-3.png 2x" alt="">
+                </figure> <!-- end intro-pic-primary -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/callos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Callos</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Stewed tripe dish, cooked slowly over low heat to a rich broth
-            </div>
-          </div>
+                <div class="intro-block-content">
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/fingers.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Chicken Fingers</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                    <figure class="intro-block-content__pic">
+                        <img src="images/intro-2.jpg" srcset="images/intro-2.jpg 1x, 
+                             images/intro-2.jpg 2x" alt="">
+                    </figure> <!-- end intro-pic-secondary -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/mussels.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Mussels</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                    <div class="intro-block-content__text-wrap">
+                        <p class="intro-block-content__text">
+                            <i>Llavorsí <br> Pallars Sobirà</i>
+                        </p>
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/gambes.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Garlic Prawns</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                    </div> <!-- end intro-block-content__social -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/pop.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Galician-style Octopus</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Octopus served with potatoes, olive oil, and paprika
-            </div>
-          </div>
+                </div> <!-- end intro-block-content -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/pebrots.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Padrón-style Peppers</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Padrón peppers fried in olive oil, served hot with a dusting of coarse salt; some are spicy, some are not!
-            </div>
-          </div>
+            </div> <!-- grid-block -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/calamars.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Andalusian-style Calamari</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Breaded calamari with tiny squid
-            </div>
-          </div>
+        </section> <!-- end s-intro -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/amanida.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Arnui Salad</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Lettuce, tomato, onion, olives, anchovy, romesco sauce
-            </div>
-          </div>
+        <!-- # menu
+        ================================================== -->
+        <section id="menu" class="container s-menu target-section">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/brie.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Deep-fried Brie</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Deep-fried Brie - Segment of Brie, breaded and deep-fried, with toasted bread and jam
-            </div>
-          </div>
+            <div class="row s-menu__content">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/carpaccio.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Beef Carpaccio</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                <div class="column xl-4 lg-5 md-12 s-menu__content-start">
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/escalivada.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Escalivada on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Roasted vegetables on Catalan flatbread
-            </div>
-          </div>
+                    <div class="section-header">
+                        <h2 class="text-display-title">Our menu</h2>
+                    </div>
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/canelons.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Cannelloni</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-		          Lasagna rolls baked with a minced beef filling and covered in béchamel sauce
-            </div>
-          </div>
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li>
+                                <a href="tab-tapes">
+                                    <span>Tapas</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-plats">
+                                    <span>Dishes</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-coques">
+                                    <span>Flatbread</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-postres">
+                                    <span>Desserts</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/provolone.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Baked Provolone</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                </div> <!-- end s-menu__content-start -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/boti.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Botifarra</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Catalan white sausage
-            </div>
-          </div>
+                <div class="column xl-6 lg-6 md-12 s-menu__content-end">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/boti-negra.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Botifarra Negra</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Botifarra Negra is a Catalan black sausage, similar to black pudding sausage
-            </div>
-          </div>
+                    <div class="tab-content menu-block">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/anec.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Rice with Duck</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                        <div id="tab-tapes" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/costella.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Rice with Ribs and Mushrooms</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Tapas
+                            </h6>
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/xurrasco.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Barbecued Beef</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Potato wedges with garlic sauce</h4>
+                                        <p>Patatas bravas, with traditional Catalan garlic and mayonnaise sauce</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Croquettes</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Mussels</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Galician-style octopus</h4>
+                                        <p>Octopus served with potatoes, olive oil, and paprika</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Padrón-style peppers</h4>
+                                        <p>Padrón peppers fried in olive oil, served hot with a dusting of coarse salt; some are spicy, some are not!</p>
+                                    </div>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Garlic prawns</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Andalusian-style calamari</h4>
+                                        <p>Breaded calamari with tiny squid</p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-pernil.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Ham on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-formatges.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Cheese on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                        </div> <!-- end tab-content__item -->
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-pop.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Galician-style Octopus on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Octopus, olive oil, and paprika
-            </div>
-          </div>
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-sobrassada.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Sobrassada on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Sausage paste from the Balearic Islands made with ground pork, paprika, salt and other spices
-            </div>
-          </div>
+                        <div id="tab-plats" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-tonyina.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Tuna on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Dishes
+                            </h6>
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-espinacas.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Spinach on Catalan flatbread</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              
-            </div>
-          </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Rice with crab</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Rice with ribs and mushrooms</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Rice in black ink</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Rice with sobrassada and egg</h4>
+                                        <p>Sobrassada is cured sausage made with ground pork, paprika, and other spices
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Botifarra</h4>
+                                        <p>Catalan white sausage</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Black botifarra</h4>
+                                        <p>Catalan black sausage</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Lagarto</h4>
+                                        <p>A long cut of pork, thinly sliced
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Entrana</h4>
+                                        <p>A long cut of steak, juicy and thinly sliced
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Arnui salad</h4>
+                                        <p>Lettuce, tomato, onion, olives, anchovy, romesco sauce</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Deep-fried brie</h4>
+                                        <p>Segment of brie, breaded and deep-fried, with toasted bread and jam</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Beef carpaccio</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Baked provolone</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Camembert</h4>
+                                        <p>Camembert from the oven
+                                        </p>
+                                    </div>
+                                </li>
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/filiberto.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Filiberto</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Yoghurt, Ice cream, and syrup
-            </div>
-          </div>
+                            </ul> <!-- end menu-list -->
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/coulant.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">White chocolate Coulant</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Chocolate cake with a molten white chocolate core
-            </div>
-          </div>
+                        </div> <!-- end tab-content__item -->
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/coulant-negra.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Dark chocolate Coulant</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Chocolate cake with a molten dark chocolate core
-            </div>
-          </div>
+                        <div id="tab-coques" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/bunyols.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Bunyols</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-		          Tasty, deep-fried dough balls traditionally flavoured with aniseed and sprinkled with sugar
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Flatbread
+                            </h6>
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/gelats.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Ice cream</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-              Many flavours, see for yourself at the ice cream counter
-            </div>
-          </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Galician-style octopus on Catalan flatbread</h4>
+                                        <p>Octopus, olive oil, and paprika</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Cheese on Catalan flatbread</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Sobrassada on Catalan flatbread</h4>
+                                        <p>Sausage paste from the Balearic Islands made with ground pork, paprika, salt and other spices</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Spinach on Catalan flatbread</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Tuna on Catalan flatbread</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Escalivada on Catalan flatbread</h4>
+                                        <p>Roasted vegetables on Catalan flatbread</p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-        </div>
+                        </div> <!-- end tab-content__item -->
 
-      </div>
-    </section><!-- End Menu Section -->
+                        <div id="tab-postres" class="menu-block__group tab-content__item">
 
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container" data-aos="fade-up">
+                            <h6 class="menu-block__cat-name">
+                                Desserts
+                            </h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Filiberto</h4>
+                                        <p>Yoghurt, ice cream, and syrup</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>White chocolate coulant</h4>
+                                        <p>Chocolate cake with a molten white chocolate core</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Dark chocolate coulant</h4>
+                                        <p>Chocolate cake with a molten dark chocolate core</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Bunyols</h4>
+                                        <p>Tasty, deep-fried dough balls traditionally flavoured with aniseed and sprinkled with sugar</p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Ice cream</h4>
+                                        <p>Many flavours, see for yourself at the ice cream counter</p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-        <div class="section-title">
-          <h2>Specials</h2>
-          <p>Our Specials</p>
-        </div>
+                        </div> <!-- end tab-content__item -->
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    </div> <!-- menu-block -->
 
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Butifarra Negra</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Filiberto</a>
-              </li>
-            </ul>
-          </div>
+                </div> <!-- end s-menu__content-end -->
 
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
+            </div> <!-- end s-menu__content -->
 
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <p>Botifarra Negra is a Catalan black sausage, similar to black pudding sausage. It is served with baked potato and alioli sauce,  on a thick slice of traditional 'pa amb tomàquet' - toasted country bread with tomato rubbed over and seasoned with olive oil and salt</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/menu/buti-negra.png" alt="" class="img-fluid">
-                  </div>
+        </section> <!-- end s-menu -->
+
+        <!-- # about
+                ================================================== -->
+        <section id="about" class="container s-about target-section">
+
+            <div class="row s-about__content">
+
+                <div class="column xl-4 lg-5 md-12 s-about__content-start">
+
+                    <div class="section-header">
+                        <h2 class="text-display-title">About us</h2>
+                    </div>
+
+                </div> <!-- end s-about__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-about__content-end">
+                    <p>
+                        Founded in 2012, the Taverna Arnui sits in the village of Llavorsí, just underneath the Bordes d'Arnui that give the restaurant its name.
+                    </p>
+
+                    <p>
+                        Our classic cuisine features seasonally inspired menus with the highest quality ingredients. There is something for everyone - from shareable small plates to Catalan flatbread to a traditional dining experience. Our desire to treat guests like family has remained the same but our seasonal flavours are ever-changing.
+                    </p>
+
+                    <p>
+                        Come have a relaxing lunch or dinner of delicious food with friends or family; at the Taverna Arnui you'll always feel at home.
+                    </p>
+
+                </div> <!--end column -->
+
+            </div> <!-- end s-about__content-end -->
+
+        </section> <!-- end s-about -->
+
+        <!-- # footer 
+                ================================================== -->
+        <footer id="footer" class="container s-footer">
+            <div class="row s-footer__main">
+                <div class="column xl-3 lg-12 footer-block s-footer__main-start">
+
+                    <div class="s-footer__logo">
+                        <a class="logo" href="index.html">
+                            <h4><i>Taverna Arnui</i></h4>
+
+                        </a>
+                    </div>
+
+                </div> <!-- end s-footer__main-start -->
+
+                <div class="column xl-9 lg-12 s-footer__main-end grid-cols grid-cols--wrap">
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Location</h6>
+                        <p>
+                            Carretera Vall de Aran 45 <br>
+                            25595 Llavorsí, Lleida
+                        </p>
+                    </div>
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Reservations</h6>
+                        <ul class="link-list">
+                            <li><a href="tel:+34653646933">+34 653 64 69 33</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Summer</h6>
+                        <p class="opening-hours">
+                            <span class="opening-hours__days">Every day: 13 - 15, 19:30 - 22</span>
+                        </p>
+                    </div>
+                    <div class="grid-cols__column footer-block">
+                        <h6>Other seasons</h6>
+                        <p class="opening-hours">
+                            <span class="opening-hours__days">Friday and Saturday: 13 - 15, 19,30 a 22</span>
+                            <br>
+                            <span class="opening-hours__days">Sunday: 13 a 15</span>
+                        </p>
+                    </div>
+
+                </div> <!-- s-footer__main-end -->
+
+            </div> <!-- end  s-footer__main-content -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column x1-6 lg-12">
+                    <div class="column x1-6 lg-12">
+                        <p>With <span style="color: red">♥</span> from Taverna Arnui</p>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <p>The Filiberto is a typical dessert from Pallars Sobirà; It is a simple, fresh dessert that perfectly combines the three ingredients of its recipe. Made with yogurt, plain ice cream, and currant syrup. It is a dessert that children love and grown-ups even more.</p>
-                    <p>The cold ice cream and the texture and flavor of the fresh yogurt enhance the intensity of the currant syrup, it reminds many of the flavor of jelly beans and the colour and its presentation really surprises!</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/menu/filiberto.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
+            </div> <!-- end s-footer__bottom -->
 
-      </div>
-    </section><!-- End Specials Section -->
+        </footer> <!-- end s-footer -->
 
-   <!-- ======= About Section ======= -->
-   <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-     
-      <div class="section-title">
-        <h2>About</h2>
-        <p>About Us</p>
-      </div>
+    </div> <!-- end page-wrap -->
 
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-          <div class="about-img">
-            <img src="assets/img/about.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <p>
-            Founded in 2012, the Taverna Arnui sits in the village of Llavorsí, just underneath the Bordes d'Arnui that give the restaurant its name.
-          </p>
-          <p>
-            Our classic cuisine features seasonally inspired menus with the highest quality ingredients. There is something for everyone - from shareable small plates to Catalan flatbread to a traditional dining experience. Our desire to treat guests like family has remained the same but our seasonal flavours are ever-changing.
-          </p>
-          <p>
-            Come have a relaxing lunch or dinner of delicious food with friends or family; at the Taverna Arnui you'll always feel at home.
-          </p>        
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!-- End About Section -->
-
-<!-- ======= Gallery Section ======= -->
-<section id="gallery" class="gallery">
-
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Gallery</h2>
-      <p>Eat, enjoy!</p>
-    </div>
-  </div>
-
-  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row g-0">
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-4.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-4.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-10.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-10.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-11.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-11.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-12.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-12.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End Gallery Section -->
-
-    <!-- ======= Contact Section ======= -->
-     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-      </div>
-
-      <div class="container" data-aos="fade-up">
-       
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location</h4>
-                <p>Carretera Vall de Aran 45, 25595 Llavorsí, Lleida</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Phone</h4>
-                <p>+34 653 64 69 33</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="open-hours">
-                <i class="bi bi-clock"></i>
-                <h4>Opening Hours</h4>
-                <p>In summer; everyday</p>
-                <p>In other seasons; the weekends</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-      </div>
-    </section>
-    
-  <!-- End Contact Section -->
-
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-       <div class="container">
-      <div class="copyright">
-      <strong><span>With <span style="color: red">♥</span> from Taverna Arnui</span></strong>
-      <!-- Website built by Jim Kennedy on the Bootstrap Restaurantly template -->
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
