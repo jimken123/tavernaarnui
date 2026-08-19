@@ -1,4 +1,4 @@
-# Taverna revamp
+# Taverna Arnui restuarant in Llavorsí
 
 The [Taverna Arnui](https://tavernaarnui.com) website.
 
@@ -23,4 +23,3 @@ The [Taverna Arnui](https://tavernaarnui.com) website.
 
 - ping Irish translators
 - design a template for the paper version of the menu
-- remove old artifacts
