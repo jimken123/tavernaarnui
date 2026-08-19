@@ -1,4 +1,4 @@
-# tavernaarnui.com
+# Taverna revamp
 
 The [Taverna Arnui](https://tavernaarnui.com) website.
 
@@ -18,3 +18,9 @@ The [Taverna Arnui](https://tavernaarnui.com) website.
 -> Merges to main are automatically deployed to [cloudflare pages](https://tavernaarnui.pages.dev) and [tavernaarnui.com](https://tavernaarnui.com)
 
 ![](assets/img/hero-bg.jpg)
+
+## To Do
+
+- ping Irish translators
+- design a template for the paper version of the menu
+- remove old artifacts

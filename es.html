@@ -1,681 +1,575 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--- basic page needs
+        ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taverna Arnui</title>
 
-  <title>Taverna Arnui</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/fav.png" rel="favicon">
+    <!-- CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="top">
 
-   <!-- ======= Top Bar ======= -->
-   <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+34 653 64 69 33</span></i>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="index.html">CAT</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="en.html">EN</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="fr.html">FR</a>
-        <i class="bi d-flex align-items-left ms-4"></i><a href="es.html">ES</a>
-      </div>
-
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
-  </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
 
-      <!-- Uncomment below if you prefer to use text instead of an image logo -->
-      <h1 class="logo me-auto me-lg-0"><a href="es.html">Taverna Arnui</a></h1>
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menú</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Especiales</a></li>
-          <li><a class="nav-link scrollto" href="#about">Acerca de</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      <a href="#menu" class="book-a-table-btn scrollto d-none d-lg-flex">Menú</a>
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
 
-    </div>
-  </header><!-- End Header -->
+            <div class="container s-header__content">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1><span>Taverna Arnui</span></h1>
-          <h2>¡Bienvenidos a Llavorsí!</h2>
+                <div class="s-header__block">
+                    <div class="header-logo">
+                        <a class="logo" href="index.html">
+                            <h5>Taverna Arnui</h5>
+                        </a>
+                    </div>
 
-          <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Nuestra Menú</a>
-            <a href="#contact" class="btn-book animated fadeInUp scrollto">Reserva una Mesa</a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section><!-- End Hero -->
+                    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
 
-  <main id="main">
+                <nav class="header-nav">
+                                        <ul class="header-nav__links">
+                        <li><a href="index.html">Cat</a></li>
+                        <li><a href="es.html">Es</a></li>
+                        <li><a href="en.html">En</a></li>
 
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
+                    </ul> <!-- end header-nav__links --> 
+                    <div class="header-contact">
+                        <a href="tel:+" class="header-contact__num btn">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                stroke-width="1.5" width="24" height="24" color="#000000">
+                                <defs>
+                                    <style>
+                                        .cls-6376396cc3a86d32eae6f0dc-1 {
+                                            fill: none;
+                                            stroke: currentColor;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="cls-6376396cc3a86d32eae6f0dc-1"
+                                    d="M19.64,21.25c-2.54,2.55-8.38.83-13-3.84S.2,6.9,2.75,4.36L5.53,1.57,10.9,6.94l-2,2A2.18,2.18,0,0,0,8.9,12L12,15.1a2.18,2.18,0,0,0,3.07,0l2-2,5.37,5.37Z">
+                                </path>
+                            </svg>
+                            +34 653 64 69 33
+                        </a>
+                    </div> <!-- end header-contact -->
+                </nav> <!-- end header-nav -->
 
-        <div class="section-title">
-          <h2>Menú</h2>
-          <p>Nuestra Menú</p>
-        </div>
+            </div> <!-- end s-header__content -->
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-tapas">Tapas</li>
-              <li data-filter=".filter-dishes">Platos</li>
-              <li data-filter=".filter-coca">Cocas</li>
-              <li data-filter=".filter-desserts">Postres</li>
-            </ul>
-          </div>
-        </div>
+        </header> <!-- end s-header -->
 
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="container s-intro target-section">
 
-          <!-- Hummus 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/hummus.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Hummus</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
-          -->
-          
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/patates.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Patatas picantes</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+            <div class="grid-block s-intro__content">
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/patates-allioli.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Patatas alioli</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                <div class="intro-header">
+                    <div class="intro-header__overline">Bienvenido a la</div>
+                    <h1 class="intro-header__big-type">
+                        Taverna <br>
+                        Arnui
+                    </h1>
+                </div> <!-- end intro-header -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/croquetes-pollastre.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Croquetas pollo</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/croquetes-bolets.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Croquetas setas</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                <figure class="intro-pic-primary">
+                    <img src="images/intro-3.png" srcset="images/intro-3.png 1x, 
+                         images/intro-3.png 2x" alt="">
+                </figure> <!-- end intro-pic-primary -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/callos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Callos</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                <div class="intro-block-content">
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/fingers.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Fingers pollo</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    <figure class="intro-block-content__pic">
+                        <img src="images/intro-2.jpg" srcset="images/intro-2.jpg 1x, 
+                             images/intro-2.jpg 2x" alt="">
+                    </figure> <!-- end intro-pic-secondary -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/mussels.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Mejillones</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    <div class="intro-block-content__text-wrap">
+                        <p class="intro-block-content__text">
+                            <i>Llavorsí <br> Pallars Sobirà</i>
+                        </p>
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/gambes.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Gambas ajillo</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    </div> <!-- end intro-block-content__social -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/pop.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Pulpo gallega</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                </div> <!-- end intro-block-content -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/pebrots.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Pimientos padrón</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+            </div> <!-- grid-block -->
 
-          <div class="col-lg-6 menu-item filter-tapas">
-            <img src="assets/img/menu/calamars.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Calamares andaluza</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+        </section> <!-- end s-intro -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/amanida.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Ensalada arnui</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+        <!-- # menu
+        ================================================== -->
+        <section id="menu" class="container s-menu target-section">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/brie.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Brie rebozado</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+            <div class="row s-menu__content">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/carpaccio.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Carpaccio vaca</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                <div class="column xl-4 lg-5 md-12 s-menu__content-start">
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/escalivada.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca d'Escalivada</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    <div class="section-header">
+                        <h2 class="text-display-title">Nuestra carta</h2>
+                    </div>
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/canelons.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Canelones</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/provolone.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Provolone al horno</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li>
+                                <a href="tab-tapes">
+                                    <span>Tapas</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-plats">
+                                    <span>Platos</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-coques">
+                                    <span>Cocas</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-postres">
+                                    <span>Postres</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/boti.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Butifarra</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                </div> <!-- end s-menu__content-start -->
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/boti-negra.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Butifarra Negra</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                <div class="column xl-6 lg-6 md-12 s-menu__content-end">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/anec.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Arroz de pato</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                    <div class="tab-content menu-block">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/costella.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Arroz de costilla y setas</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                        <div id="tab-tapes" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-dishes">
-            <img src="assets/img/menu/xurrasco.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Tira de churrasco</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Tapas
+                            </h6>
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-pernil.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca jamón</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
-          
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-formatges.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca quesos</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Patatas alioli</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Croquetas</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Pimientos padrón</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Mejillones</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Gambas a la plancha</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Pulpo a la gallega</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Calamares a la andaluza</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-pop.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca pulpo gallega</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                        </div> <!-- end tab-content__item -->
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-sobrassada.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca sobrasada</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-tonyina.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca atún</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                        <div id="tab-plats" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-coca">
-            <img src="assets/img/menu/coca-espinacas.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coca espinacas</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Platos
+                            </h6>
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/filiberto.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Filiberto</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Arroz negro</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Arroz de cangrejo</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Arroz de costillas y setas</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Arroz de sobrasada y huevo</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Butifarra</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Butifarra negra</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Lagarto de cerdo ral</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Entraña</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Camembert gratinado</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Provolone al horno</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Brie rebozado</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Carpaccio de vaca</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/coulant.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coulant de chocolate blanco</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            </ul> <!-- end menu-list -->
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/coulant-negra.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Coulant de chocolate negro</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                        </div> <!-- end tab-content__item -->
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/bunyols.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Buñuelos de Viento</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                        <div id="tab-coques" class="menu-block__group tab-content__item">
 
-          <div class="col-lg-6 menu-item filter-desserts">
-            <img src="assets/img/menu/gelats.png" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#menu">Helado</a><span></span>
-            </div>
-            <div class="menu-ingredients">
-            </div>
-          </div>
+                            <h6 class="menu-block__cat-name">
+                                Cocas
+                            </h6>
 
-        </div>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de pulpo a la gallega</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de quesos</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de sobrasada</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de espinacas</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de atún</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coca de escalivada</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-      </div>
-    </section><!-- End Menu Section -->
+                        </div> <!-- end tab-content__item -->
 
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container" data-aos="fade-up">
+                        <div id="tab-postres" class="menu-block__group tab-content__item">
 
-        <div class="section-title">
-          <h2>Especiales</h2>
-          <p>Nuestras Especiales</p>
-        </div>
+                            <h6 class="menu-block__cat-name">
+                                Postres
+                            </h6>
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Filiberto</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coulant de chocolate blanco</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Coulant de chocolate negro</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Buñuelos de viento</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>Helado</h4>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        </div> <!-- end tab-content__item -->
 
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Butifarra Negra</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Filiberto</a>
-              </li>
-            </ul>
-          </div>
+                    </div> <!-- menu-block -->
 
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
+                </div> <!-- end s-menu__content-end -->
 
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <p>La butifarra negra es una butifarra negra catalana, similar a la morcilla. Se sirve con patata asada y salsa alioli, sobre una gruesa loncha de tradicional 'pa amb tomàquet' - pan de campo tostado con tomate rebozado y aliñado con aceite de oliva y sal
+            </div> <!-- end s-menu__content -->
+
+        </section> <!-- end s-menu -->
+
+        <!-- # about
+                ================================================== -->
+        <section id="about" class="container s-about target-section">
+
+            <div class="row s-about__content">
+
+                <div class="column xl-4 lg-5 md-12 s-about__content-start">
+
+                    <div class="section-header">
+                        <h2 class="text-display-title">Sobre nosotros</h2>
+                    </div>
+
+                </div> <!-- end s-about__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-about__content-end">
+                    <p>
+                        Fundada en 2012, la Taverna Arnui se encuentra en el pueblo de Llavorsí, justo debajo de las Bordes d'Arnui que dan nombre al restaurante.
                     </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/menu/buti-negra.png" alt="" class="img-fluid">
-                  </div>
+
+                    <p>
+                        Nuestra cocina clásica presenta menús inspirados en la temporada con ingredientes de la más alta calidad. Hay algo para todos, desde platos pequeños para compartir hasta coca y una experiencia gastronómica tradicional. Nuestro deseo de tratar a los huéspedes como familia sigue siendo el mismo, pero nuestros sabores de temporada cambian constantemente.
+                    </p>
+                    <p>
+                        Ven a disfrutar de un relajante almuerzo o cena de deliciosa comida con amigos o familiares; en la Taverna Arnui siempre te sentirás como en casa.
+                    </p>
+
+                </div> <!--end column -->
+
+            </div> <!-- end s-about__content-end -->
+
+        </section> <!-- end s-about -->
+
+        <!-- # footer 
+                ================================================== -->
+        <footer id="footer" class="container s-footer">
+            <div class="row s-footer__main">
+                <div class="column xl-3 lg-12 footer-block s-footer__main-start">
+
+                    <div class="s-footer__logo">
+                        <a class="logo" href="index.html">
+                            <h4><i>Taverna Arnui</i></h4>
+
+                        </a>
+                    </div>
+
+                </div> <!-- end s-footer__main-start -->
+
+                <div class="column xl-9 lg-12 s-footer__main-end grid-cols grid-cols--wrap">
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Ubicacion</h6>
+                        <p>
+                            Carretera Vall de Aran 45 <br>
+                            25595 Llavorsí, Lleida
+                        </p>
+                    </div>
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Reservas</h6>
+                        <ul class="link-list">
+                            <li><a href="tel:+34653646933">+34 653 64 69 33</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-cols__column footer-block">
+                        <h6>Verano</h6>
+                        <p class="opening-hours">
+                            <span class="opening-hours__days">Cada dia: 13 - 15, 19:30 - 22</span>
+                        </p>
+                    </div>
+                    <div class="grid-cols__column footer-block">
+                        <h6>Otras temporadas</h6>
+                        <p class="opening-hours">
+                            <span class="opening-hours__days">Viernes y Sábado: 13 - 15, 19,30 a 22</span>
+                            <br>
+                            <span class="opening-hours__days">Domingo: 13 a 15</span>
+                        </p>
+                    </div>
+
+                </div> <!-- s-footer__main-end -->
+
+            </div> <!-- end  s-footer__main-content -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column x1-6 lg-12">
+                  <p>Con <span style="color: red">♥</span> de Taverna Arnui</p>
                 </div>
-              </div>
-              
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <p>El Filiberto es un postre típico del Pallars Sobirà; es un postre sencillo y fresco que combina a la perfección los tres ingredientes de su receta. Elaborado con yogur, helado natural y sirope de grosella. Es un postre que encanta a los niños y más a los grandes.</p>
-                    <p>El helado frío y la textura y sabor del yogur fresco realzan la intensidad del sirope de grosellas, recuerda a muchos el sabor de las gominolas y el color y su presentación ¡sorprende!</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/menu/filiberto.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
+            </div> <!-- end s-footer__bottom -->
 
-      </div>
-    </section><!-- End Specials Section -->
+        </footer> <!-- end s-footer -->
 
-   <!-- ======= About Section ======= -->
-   <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-     
-      <div class="section-title">
-        <h2>Sobre</h2>
-        <p>Sobre nosotros</p>
-      </div>
+    </div> <!-- end page-wrap -->
 
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-          <div class="about-img">
-            <img src="assets/img/about.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <p>
-            Fundada en 2012, la Taverna Arnui se encuentra en el pueblo de Llavorsí, justo debajo de las Bordes d'Arnui que dan nombre al restaurante.
-          </p>
-          <p>
-            Nuestra cocina clásica presenta menús inspirados en la temporada con ingredientes de la más alta calidad. Hay algo para todos, desde platos pequeños para compartir hasta coca y una experiencia gastronómica tradicional. Nuestro deseo de tratar a los huéspedes como familia sigue siendo el mismo, pero nuestros sabores de temporada cambian constantemente.
-          </p>
-          <p>
-            Ven a disfrutar de un relajante almuerzo o cena de deliciosa comida con amigos o familiares; en la Taverna Arnui siempre te sentirás como en casa.
-          </p>        
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!-- End About Section -->
-
-<!-- ======= Gallery Section ======= -->
-<section id="gallery" class="gallery">
-
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Galería</h2>
-      <p>¡Come, disfruta!</p>
-    </div>
-  </div>
-
-  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row g-0">
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-4.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-4.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-10.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-10.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-11.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-11.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-12.png" class="gallery-lightbox" data-gall="gallery-item">
-            <img src="assets/img/gallery/gallery-12.png" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End Gallery Section -->
-
-    <!-- ======= Contact Section ======= -->
-     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contacto</h2>
-          <p>Contáctenos</p>
-        </div>
-      </div>
-
-      <div class="container" data-aos="fade-up">
-       
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Ubicación</h4>
-                <p>Carretera Vall de Aran 45, 25595 Llavorsí, Lleida</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Teléfono</h4>
-                <p>+34 653 64 69 33</p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="open-hours">
-                <i class="bi bi-clock"></i>
-                <h4>Horario de apertura</h4>
-                <p>En verano; cada día</p>
-                <p>En otras temporadas; los fines de semana</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-      </div>
-    </section>
-    
-  <!-- End Contact Section -->
-
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-       <div class="container">
-      <div class="copyright">
-      <strong><span>Con <span style="color: red">♥</span> de Taverna Arnui</span></strong>
-      <!-- Website built by Jim Kennedy on the Bootstrap Restaurantly template -->
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
